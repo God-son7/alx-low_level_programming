@@ -11,9 +11,9 @@
 int main(void)
 {
 	const num;
-	for (num = '0' ; num <= '9' num++)
+	for (num = '0' ; num <= '9' ; num++)
 	{
-		printf("%i", num)
+		printf("%i", num);
 	}
 	return (0);
 }
