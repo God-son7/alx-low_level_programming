@@ -6,11 +6,12 @@
  *
  * Description: yeshua is the Greatest
  * this programs prints "i am God son
+ * Return: 0
  */
 int main(void)
 {
 	char x;
-	for (x = 'z' ; x >= 'a' ; x++)
+	for (x = 'z' ; x >= 'a' ; x--)
 	{
 		putchar(x);
 	}
