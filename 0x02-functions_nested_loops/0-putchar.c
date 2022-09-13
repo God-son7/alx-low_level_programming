@@ -4,7 +4,7 @@
  * main - putchar
  *
  * Description: game of thrones
- * this prodram prints "the 
+ * this prodram prints "the
  * Return: 0
  *
  */
