@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * int _islower - iy
- *
+ * _islower - iy
+ * @c: is the int that will use argument of the function
  * Return: 0
  */
 int _islower(int c)
