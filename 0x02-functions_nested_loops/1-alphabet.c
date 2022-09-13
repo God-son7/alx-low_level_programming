@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - no lele
+ * print_alphabet - no lele
  *
  * Description: vss
  * this program prints "ggg
@@ -10,9 +10,7 @@ void print_alphabet(void)
 {
 	char c;
 	for (c = 'a' ; c <= 'z' ; c++)
-	
 		_putchar(c);
-	
 	_putchar('\n');
 
 }
