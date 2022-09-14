@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * time_table - print 0 and 9
+ * times_table - print 0 and 9
  */
-void time_table(void)
+void times_table(void)
 {
 	int num, mult, prod;
 
