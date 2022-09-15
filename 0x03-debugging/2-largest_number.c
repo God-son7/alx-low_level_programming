@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * largest_number - gte
  * @a: first
@@ -6,6 +7,7 @@
  * @c: third
  * return: largest
  */
+
 int largest_number(int a, int b, int c)
 {
 	int largest;
