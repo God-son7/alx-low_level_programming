@@ -1,35 +1,28 @@
 #include "main.h"
 
 /**
- *cap_string - capitalizes every first letter of a word in a string.
- *separators of words are:  space, tabulation,
- *new line, ,, ;, ., !, ?, ", (, ), {, and }.
- **@s: pointer to string.
- *Return: pointer to s.
+ * cap_string - capitalize first letter of each word
+ * @s: string to manipulate
+ * Return: string
  */
 
 char *cap_string(char *s)
 {
-	int count;	
+	int i = 0;	
+	/* check first index for capital */
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+				i++;
+				while (s[i] != '\0') /* iterate through string */
+					/* if lowercase and prior char is separator, capitalize*/
+					if ((s[i] >= 'a' && s[i] <= 'z')
+							&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+								s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||										s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+								s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'		
+								|| s[i - 1] == '\n'))
+								s[i] = s[i] - 'a' + 'A';
+				i++;
+}
 
-	/*  scan through string */
-	count = 0;
-	while (s[count] != '\0')
-	{
-		if (s[0] >= 97 && s[0] <= 122)
-		{							
-			s[0] = s[0] - 32;
-		}
-		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'				|| s[count] == ',' || s[count] == ';' || s[count] == '.'			|| s[count] == '.' || s[count] == '!' || s[count] == '?
-			|| s[count] == '"' || s[count] == '(' || s[count] == ')'
-    			|| s[count] == '{' || s[count] == '}')
-		{
-			if (s[count + 1] >= 97 && s[count + 1] <= 122)
-			{
-				s[count + 1] = s[count + 1] - 32;
-			}
-		}
-		count++;
-	}
-	return (s);
+						return (s);
 }
